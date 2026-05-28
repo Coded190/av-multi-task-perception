@@ -1,0 +1,26 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+*.py[cod]
+*$py.class
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.uv/
+.env
+
+# Data and Deep Learning Weights (CRITICAL)
+data/raw/*
+data/processed/*
+data/annotations/*
+weights/*.pth
+weights/*.pt
+
+# IDES
+.DS_Store
+.idea/
+.vscode/

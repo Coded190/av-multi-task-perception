@@ -1,0 +1,17 @@
+# AV Multi-Task Perception Configuration
+
+data:
+  processed_dir: "data/processed"
+  annotations_path: "data/annotations/labels.json"
+  imgsz: 640
+
+training:
+  batch_size: 2
+  learning_rate: 0.001
+  weight_decay: 0.0005
+  device: "cuda"  # Will fallback to cpu/mps automatically in code if missing
+
+loss_multipliers:
+  detection_cls: 1.0
+  detection_box: 5.0
+  segmentation: 2.0
