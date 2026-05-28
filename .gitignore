@@ -15,8 +15,11 @@ wheels/
 
 # Data and Deep Learning Weights (CRITICAL)
 data/raw/*
+!data/raw/.gitkeep
 data/processed/*
+!data/processed/.gitkeep
 data/annotations/*
+!data/annotations/.gitkeep
 weights/*.pth
 weights/*.pt
 
